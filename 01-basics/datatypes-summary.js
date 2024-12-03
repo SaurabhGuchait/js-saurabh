@@ -36,4 +36,20 @@
     } typeof function/object function
 
     - typeof null - Gives Object
+
+    --Memories
+    -Stack(Primitve)
+        -let myName = "Saurabh"
+        -let anotherName = myName
+        anotherName = "Guchait" //myName = Saurabh
+        //anothername = Guchait
+    -Heap(Non-primitive)
+        -let user = {
+            name: "Saurabh",
+            upi: "user@ybl"
+        }
+        -let userTwo = user
+        userTwo.name = "Guchait"
+        console.log(user.name)//Guchait
+        console.log(userTwo.email)//Guchait
 */
