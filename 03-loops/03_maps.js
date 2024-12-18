@@ -12,5 +12,5 @@
 
 const myNum = [1,2,3,4,5,6];
 const randomNum = myNum.filter((num) => {return num>4} )
-//console.log(randomNum);//[5,6] - If we are using breaces then return is mandatory esle it would give blank array []
+//console.log(randomNum);//[5,6] - If we are using braces then return is mandatory else it would give blank array []
 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+</head>
+<body style="background-color: black; color: aliceblue; font-size: large;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const testDemo = document.querySelector('.parent');
+    // console.log(testDemo); 
+    // console.log(testDemo.children); 
+    // console.log(testDemo.children[1]);
+    // console.log(testDemo.children[1].innerHTML);
+    // console.log(testDemo.children.length);
+    // const testDemo1 = testDemo.children;
+    // console.log(testDemo1);
+    // const testDemo3 = Array.from(testDemo1);
+    // console.log(testDemo3);
+    // testDemo3.forEach((item)=>{
+    //     item.style.color = 'green';
+    //     item.style.backgroundColor = 'white';
+    // });
+    // console.log(testDemo.children);
+    const testDemo4 = document.querySelector('.day');
+    // console.log(testDemo4);
+    // console.log(testDemo4.parentElement);
+    
+    const div = document.createElement("div");
+    console.log(div);
+    div.className = "testClass"
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute("title","testTitle");
+    div.style.backgroundColor = "green";
+    div.style.padding = "10px";
+    div.innerText = "Saurabh Guchait";
+    document.body.appendChild(div);
+    
+</script>
+</html>

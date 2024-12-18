@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>DOM Learning</title>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 id="title" class="heading">DOM Learning</h1>
+        <p>Demo Demo Demo</p>
+    </div>
+</body>
+</html>
+
+
+
+//console.log(window);
+//console.log(document);
+//console.log(document.baseURI);
+//console.log(document.links); Gives html collection not array or text collection
+//document.getElementById('top').innerHTML = "<h1>Saurabh Guchait</h1>"  -'<h1>Saurabh Guchait</h1>'
+
+<!-- 
+document.getElementById('firstHeading')
+<h1 id=​"firstHeading" class=​"firstHeading mw-first-heading">​…​</h1>​::before​<h1>​Saurabh Guchait​</h1>​</h1>​
+document.getElementById('firstHeading').id
+'firstHeading'
+document.getElementById('firstHeading').className
+'firstHeading mw-first-heading'
+document.getElementById('firstHeading').getAttribute()
+VM463:1 Uncaught TypeError: Failed to execute 'getAttribute' on 'Element': 1 argument required, but only 0 present.
+    at <anonymous>:1:41
+(anonymous) @ VM463:1Understand this errorAI
+document.getElementById('firstHeading').getAttribute('id')
+'firstHeading'
+document.getElementById('firstHeading').setAttribute('id','testHeading')
+undefined
+document.getElementById('firstHeading')
+<h1 id=​"firstHeading" class=​"firstHeading mw-first-heading">​…​</h1>​
+const testDemo = document.getElementById('firstHeading')
+undefined
+testDemo.sty
+undefined
+testDemo.style.backgroundColor = 'green'
+'green'
+Array.from(html collection name) - It would convert it to array.
+document.getElementById('h2')
+null
+document.querySelectorAll('h2')
+NodeList(17) [h2.vector-pinnable-header-label, h2#Etymology, h2#History, h2#Mass_production, h2#Components_and_design, h2#Safety, h2#Costs_and_benefits, h2#Environmental_effects, h2#Social_issues, h2#Emerging_car_technologies, h2#Industry, h2#Alternatives, h2#See_also, h2#Notes, h2#References, h2#Further_reading, h2#External_links]0: h2.vector-pinnable-header-label1: h2#Etymology2: h2#History3: h2#Mass_production4: h2#Components_and_design5: h2#Safety6: h2#Costs_and_benefits7: h2#Environmental_effects8: h2#Social_issues9: h2#Emerging_car_technologies10: h2#Industry11: h2#Alternatives12: h2#See_also13: h2#Notes14: h2#References15: h2#Further_reading16: h2#External_linkslength: 17[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+const testDemo = document.querySelectorAll('h2')
+undefined
+testDemo
+NodeList(17) [h2.vector-pinnable-header-label, h2#Etymology, h2#History, h2#Mass_production, h2#Components_and_design, h2#Safety, h2#Costs_and_benefits, h2#Environmental_effects, h2#Social_issues, h2#Emerging_car_technologies, h2#Industry, h2#Alternatives, h2#See_also, h2#Notes, h2#References, h2#Further_reading, h2#External_links]
+testDemo.forEach(function(item){
+    item.style.backgroundColor = 'blue'
+})
+undefined
+testDemo.forEach(function(item){
+    item.style.color = 'blue'
+})
+undefined
+-->
